@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post!, only: [:show, :edit, :update, :create]
+  before_action :set_post!, only: [:show, :edit, :update]
 
   def create
       @post = Author.create!(author_params)
